@@ -1,0 +1,31 @@
+{
+  "name": "setup-ubuntu",
+  "bin": {
+    "setup-ubuntu": "./build/bin/index.js"
+  },
+  "version": "1.0.0",
+  "description": "A utility tool to automatically install necessary tools for ubuntu. Beneficial when you setup a fresh ubuntu. You don't have to repeat the installations everytime!",
+  "main": "build/bin/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "yarn build && setup-ubuntu"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "execa": "^9.1.0",
+    "figlet": "^1.7.0",
+    "inquirer": "^9.2.22",
+    "ora": "^8.0.1"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.5.8",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.12.12",
+    "typescript": "^5.4.5"
+  }
+}
